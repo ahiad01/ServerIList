@@ -172,9 +172,9 @@ void Manager::code_handler(Message msg)
 		/*Send to the new user the current users in the group*/
 		for (int col = 0; col < data.size(); col++)
 		{
-			if (args[1] == data[col][1])
+			if (args[2] == data[col][1])
 				continue;
-			this->trySend(args[1], makeReceiveMessgae(PGM_CTR_NEW_USER,data[col]));
+			this->trySend(args[2], makeReceiveMessgae(PGM_CTR_NEW_USER,data[col]));
 		}
 
 		/*Send to the new user the current list*/
@@ -182,7 +182,7 @@ void Manager::code_handler(Message msg)
 		for (int col = 0; col < data.size(); col++)
 		{
 			receive = makeReceiveMessgae(LST_SCC_ADD_ITEM, data[col]);
-			trySend(args[1], receive);
+			trySend(args[2], receive);
 		}
 
 		break;
