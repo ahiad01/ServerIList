@@ -11,6 +11,7 @@ int main()
 {
 	//Program prog;
 	//prog.start();
+	int a = 5;
 
 	stoi("aa^asasas");
 	system("pause");
