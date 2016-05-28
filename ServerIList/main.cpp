@@ -12,7 +12,7 @@ int main()
 	//Program prog;
 	//prog.start();
 
-	stoi("aa^");
+	stoi("aa^asasas");
 	system("pause");
 	return 0;
 	
